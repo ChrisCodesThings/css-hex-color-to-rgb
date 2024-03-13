@@ -20,22 +20,20 @@ console.log(hexColorToRGBA("#6495ed"));
 ## Syntax
 
 ```js
-hexColorToRGBA(col);
+hexColorToRGBA(color);
 ```
 
 ### Parameters
 
-- *col*: a CSS hex color code
+- *color*: a CSS hex color code
 
 ### Return Value
 
-Array containing the R, G, B and A values of *col*.
+Returns an array containing the `[red, green, blue, alpha]` values of *color*.
+
+Red, green and blue values are in the range 0-255.
+Alpha value is in the range 0-1.
 
 ## Description
 
-Converts a CSS hex color to RGBA values. 
-
-- R, G, and B range from 0 to 255 
-- A ranges from 0 to 1
-
-Accepts CSS hex color codes in any form.
+Does what it says on the tin. 
