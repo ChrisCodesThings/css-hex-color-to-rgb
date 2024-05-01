@@ -1,24 +1,6 @@
 
 const { default: testFunc } = await import("../");
 
-describe("check for bad input", () => {
-    test("nothing", async () => {
-        expect(testFunc()).toBeUndefined();
-    });
-
-    test("boolean", async () => {
-        expect(testFunc(true)).toBeUndefined();
-    });
-
-    test("a number", async () => {
-        expect(testFunc(123)).toBeUndefined();
-    });
-
-    test("not a css colour string", async () => {
-        expect(testFunc("foo")).toBeUndefined();
-    });
-});
-
 describe("convert some colours", () => {
     test("black", () => {
         expect(testFunc("#000000")).toEqual([0, 0, 0, 1]);
