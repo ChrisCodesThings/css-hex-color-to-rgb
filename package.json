@@ -1,6 +1,6 @@
 {
   "name": "@chriscodesthings/css-hex-color-to-rgba",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Converts a CSS hex color code to RGBA values",
   "keywords": [
     "css",
