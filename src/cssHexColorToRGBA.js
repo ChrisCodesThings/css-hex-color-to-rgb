@@ -2,11 +2,12 @@
 
 import expandCSSHexColor from "@chriscodesthings/expand-css-hex-color";
 import { roundToPrecision } from "more-rounding";
+import * as Types from "@chriscodesthings/basic-color-types";
 
 /**
  * Converts a colour from a CSS hex colour code to an RGBA array
- * @param {string} col CSS hex colour code
- * @returns {[number, number, number, number]}
+ * @param {Types.cssHexCode} col CSS hex colour code
+ * @returns {Types.rgbaColor}
  */
 export default function (col) {
     const hex = expandCSSHexColor(col).slice(1);
